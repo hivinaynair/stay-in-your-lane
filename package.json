@@ -1,0 +1,23 @@
+{
+  "name": "stay-in-your-lane",
+  "version": "0.0.1",
+  "description": "Enforce feature-based folder boundaries. No cross-feature imports.",
+  "type": "module",
+  "bin": {
+    "stay-in-your-lane": "./src/cli.ts"
+  },
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "vitest": "^4.1.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "oxc-parser": "^0.123.0"
+  }
+}
