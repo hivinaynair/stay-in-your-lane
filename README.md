@@ -1,5 +1,8 @@
 # stay-in-your-lane
 
+[![npm](https://img.shields.io/npm/v/stay-in-your-lane)](https://www.npmjs.com/package/stay-in-your-lane)
+[![GitHub](https://img.shields.io/badge/github-hivinaynair%2Fstay--in--your--lane-blue?logo=github)](https://github.com/hivinaynair/stay-in-your-lane)
+
 Enforce feature-based folder boundaries. No cross-feature imports.
 
 If your codebase is organized into feature folders — `src/features/auth`, `src/features/billing`, `src/features/dashboard` — this tool makes sure they don't reach into each other. Features can share a common layer, but they can't import from sibling features.
@@ -97,4 +100,4 @@ npx stay-in-your-lane --staged
 
 ## License
 
-MIT
+MIT — [github.com/hivinaynair/stay-in-your-lane](https://github.com/hivinaynair/stay-in-your-lane)
