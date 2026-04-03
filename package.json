@@ -1,45 +1,45 @@
 {
-  "name": "stay-in-your-lane",
-  "version": "0.0.1",
-  "description": "Enforce feature-based folder boundaries. No cross-feature imports.",
-  "type": "module",
-  "bin": {
-    "stay-in-your-lane": "./dist/cli.js"
-  },
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "bun build src/cli.ts --outfile dist/cli.js --target node --format esm && node -e \"const fs=require('fs'),f='dist/cli.js',s=fs.readFileSync(f,'utf8');fs.writeFileSync(f,s.replace(/^#!.*\\n(\\/\\/ @bun\\n)?/,'#!/usr/bin/env node\\n'))\"",
-    "prepublishOnly": "bun run test && bun run build",
-    "test": "vitest run",
-    "test:watch": "vitest"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hivinaynair/stay-in-your-lane.git"
-  },
-  "homepage": "https://github.com/hivinaynair/stay-in-your-lane#readme",
-  "bugs": {
-    "url": "https://github.com/hivinaynair/stay-in-your-lane/issues"
-  },
-  "keywords": [
-    "lint",
-    "architecture",
-    "imports",
-    "boundaries",
-    "features",
-    "modules"
-  ],
-  "license": "MIT",
-  "devDependencies": {
-    "@types/bun": "latest",
-    "vitest": "^4.1.2"
-  },
-  "peerDependencies": {
-    "typescript": "^5"
-  },
-  "dependencies": {
-    "oxc-parser": "^0.123.0"
-  }
+	"name": "stay-in-your-lane",
+	"version": "0.0.2",
+	"description": "Enforce feature-based folder boundaries. No cross-feature imports.",
+	"type": "module",
+	"bin": {
+		"stay-in-your-lane": "./dist/cli.js"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "bun build src/cli.ts --outfile dist/cli.js --target node --format esm && node -e \"const fs=require('fs'),f='dist/cli.js',s=fs.readFileSync(f,'utf8');fs.writeFileSync(f,s.replace(/^#!.*\\n(\\/\\/ @bun\\n)?/,'#!/usr/bin/env node\\n'))\"",
+		"prepublishOnly": "bun run test && bun run build",
+		"test": "vitest run",
+		"test:watch": "vitest"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hivinaynair/stay-in-your-lane.git"
+	},
+	"homepage": "https://github.com/hivinaynair/stay-in-your-lane#readme",
+	"bugs": {
+		"url": "https://github.com/hivinaynair/stay-in-your-lane/issues"
+	},
+	"keywords": [
+		"lint",
+		"architecture",
+		"imports",
+		"boundaries",
+		"features",
+		"modules"
+	],
+	"license": "MIT",
+	"devDependencies": {
+		"@types/bun": "latest",
+		"vitest": "^4.1.2"
+	},
+	"peerDependencies": {
+		"typescript": "^5"
+	},
+	"dependencies": {
+		"oxc-parser": "^0.123.0"
+	}
 }
