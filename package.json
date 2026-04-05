@@ -1,6 +1,6 @@
 {
 	"name": "stay-in-your-lane",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Enforce feature-based folder boundaries. No cross-feature imports.",
 	"type": "module",
 	"bin": {
