@@ -29,8 +29,8 @@ try {
     ? formatJson(result, rootDir)
     : formatHuman(result, rootDir);
 
-  console.log(output);
-  process.exit(result.violations.length > 0 ? 1 : 0);
+  const exitCode = result.violations.length > 0 ? 1 : 0;
+  process.stdout.write(`${output}\n`, () => process.exit(exitCode));
 } catch (err) {
   console.error(
     `stay-in-your-lane: ${err instanceof Error ? err.message : err}`,
